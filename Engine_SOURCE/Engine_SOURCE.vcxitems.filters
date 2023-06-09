@@ -28,6 +28,21 @@
     <Filter Include="Resource\Resources">
       <UniqueIdentifier>{a8cefe2b-1b64-49ba-9807-0ab16104a01d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{0d18d27e-5f9e-4f92-8a32-f92e723c2884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Component">
+      <UniqueIdentifier>{3769dd49-e6de-4508-91fe-8e983c5066dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Component\Script">
+      <UniqueIdentifier>{969f8b1b-a6f0-454a-9fca-97339b128106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{5c92c922-72c4-475f-9ae6-666d576accfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Layer">
+      <UniqueIdentifier>{77818884-05af-4053-93b6-58e66b32133f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)MyApplication.cpp">
@@ -51,9 +66,38 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)MyResources.cpp">
       <Filter>Resource\Resources</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)MyResource.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MyRenderer.cpp">
       <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ConstantBuffer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Shader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Script.cpp">
+      <Filter>GameObject\Component\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Component.cpp">
+      <Filter>GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mesh.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MyResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MyLayer.cpp">
+      <Filter>Scene\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MySceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MyScene.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -90,9 +134,38 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MyResources.h">
       <Filter>Resource\Resources</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)MyResource.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MyRenderer.h">
       <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConstantBuffer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Shader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Script.h">
+      <Filter>GameObject\Component\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Component.h">
+      <Filter>GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mesh.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MyResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MyLayer.h">
+      <Filter>Scene\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MySceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MyScene.h">
+      <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
